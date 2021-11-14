@@ -1,0 +1,64 @@
+/* general styling rule */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: monospace;
+}
+:root {
+    --background: olivedrab;
+    --text: orange;
+    --shadow: 0 0 10px rgba(200, 50, 50, 0.8)
+}
+
+/* head stylezzz */
+header {
+    background-color: olivedrab;
+    color: orange;
+    font-family: monospace;
+    text-shadow: 0 0 10px rgba(200, 50, 50, 0.8);
+    font-style: oblique;
+    background-size: cover;
+    justify-content: space-around;
+    width: 100%;
+    position: -webkit-sticky;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+header h1 {
+    font-size: 64px;
+}
+header nav ul {
+    list-style: none;
+
+}
+.Sarah {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* body styling */
+body {
+    background-image: url("../student-bio/images/Rainbosplosion.jpg");
+    background-size: cover;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    }
+.info-cards {
+        background-image: url("../student-bio/images/Rainbosplosion.jpg");
+    }
+
+/* stylish foot */
+footer {
+    background-color: olivedrab;
+    color: orange;
+    font-family: monospace;
+    text-shadow: 0 0 10px rgba(200, 50, 50, 0.8);
+    font-style: oblique;
+    display: flex;
+    width: 100%;
+    border-bottom: ;
+}
