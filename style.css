@@ -3,44 +3,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: monospace;
 }
 :root {
     --background: olivedrab;
-    --text: orange;
-    --shadow: 0 0 10px rgba(200, 50, 50, 0.8)
+    --text: darkorange;
+    --shadow: 0 0 8px rgb(0, 0, 0);
 }
 
 /* head stylezzz */
 header {
-    background-color: olivedrab;
-    color: orange;
+    background-color: var(--background);
+    color: var(--text);
     font-family: monospace;
-    text-shadow: 0 0 10px rgba(200, 50, 50, 0.8);
+    text-shadow: var(--shadow);
     font-style: oblique;
     background-size: cover;
     justify-content: space-around;
     width: 100%;
+    position: sticky;
     position: -webkit-sticky;
     display: flex;
     align-items: center;
     z-index: 9999;
 }
 header h1 {
-    font-size: 64px;
-}
-header nav ul {
-    list-style: none;
-
+    font-size: 100px;
 }
 .Sarah {
     text-decoration: none;
     color: var(--text);
+    font-size: 46px;
+    list-style: none;
 }
+.Sarah a:link, a:visited {
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--text);
+}
+.Sarah a:hover, a:active {
+    color: black;
+  }
 
 /* body styling */
 body {
-    background-image: url("../student-bio/images/Rainbosplosion.jpg");
+    background-image: url("../Bio/images/Rainbosplosion.jpg");
     background-size: cover;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -48,17 +54,39 @@ body {
     display: flex;
     }
 .info-cards {
-        background-image: url("../student-bio/images/Rainbosplosion.jpg");
-    }
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bio {
+    width: 20%;
+    border-color:rgb(0, 0, 0);
+    background-color: var(--background);
+    border-width: 10px;
+}
+.help {
+    width: 20%;
+    border-color:rgb(0, 0, 0);
+    background-color: var(--background);
+    border-width: 10px;
+}
 
 /* stylish foot */
 footer {
-    background-color: olivedrab;
-    color: orange;
+    background-color: var(--background);
+    color: var(--text);
     font-family: monospace;
-    text-shadow: 0 0 10px rgba(200, 50, 50, 0.8);
+    text-shadow: var(--shadow);
     font-style: oblique;
-    display: flex;
     width: 100%;
-    border-bottom: ;
+    border-bottom: 0px;
+    text-align: center;
+    font-size: 35px;
 }
+footer a:link, a:visited {
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--text);
+}
+footer a:hover, a:active {
+    color: black;
+  }
