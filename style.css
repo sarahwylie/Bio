@@ -7,7 +7,7 @@
 :root {
     --background: olivedrab;
     --text: darkorange;
-    --shadow: 0 0 8px rgb(0, 0, 0);
+    --shadow: rgb(0, 0, 0);
 }
 
 /* head stylezzz */
@@ -15,19 +15,19 @@ header {
     background-color: var(--background);
     color: var(--text);
     font-family: monospace;
-    text-shadow: var(--shadow);
+    text-shadow: 0 0 8px var(--shadow);
     font-style: oblique;
     background-size: cover;
     justify-content: space-around;
     width: 100%;
     position: sticky;
-    position: -webkit-sticky;
     display: flex;
     align-items: center;
     z-index: 9999;
 }
 header h1 {
     font-size: 100px;
+    text-decoration: none;
 }
 .Sarah {
     text-decoration: none;
@@ -41,7 +41,7 @@ header h1 {
     color: var(--text);
 }
 .Sarah a:hover, a:active {
-    color: black;
+    color: var(--shadow);
   }
 
 /* body styling */
@@ -54,28 +54,48 @@ body {
     display: flex;
     }
 .info-cards {
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    flex: 1;
 }
-.bio {
-    width: 20%;
-    border-color:rgb(0, 0, 0);
+.bio, .help, .contact, .portfolio {
+    height: 250px;
+    width: 500px;
+    color: var(--text);
     background-color: var(--background);
-    border-width: 10px;
+    flex: wrap;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    display:inline-block; *display:inline; zoom:1
 }
-.help {
-    width: 20%;
-    border-color:rgb(0, 0, 0);
+.bio p, .help, .contact, .portfolio {
+    height: 250px;
+    width: 500px;
+    color: var(--text);
     background-color: var(--background);
-    border-width: 10px;
+    flex: wrap;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    display:inline-block; *display:inline; zoom:1
 }
+
+/* Portfolio page */
+
 
 /* stylish foot */
 footer {
     background-color: var(--background);
     color: var(--text);
     font-family: monospace;
-    text-shadow: var(--shadow);
+    text-shadow: 0 0 8px var(--shadow);
     font-style: oblique;
     width: 100%;
     border-bottom: 0px;
@@ -88,5 +108,5 @@ footer a:link, a:visited {
     color: var(--text);
 }
 footer a:hover, a:active {
-    color: black;
+    color: var(--shadow);
   }
