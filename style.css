@@ -20,7 +20,7 @@ header {
     background-size: cover;
     justify-content: space-around;
     width: 100%;
-    position: sticky;
+    position: sticky; top: 0;
     display: flex;
     align-items: center;
     z-index: 9999;
@@ -48,20 +48,21 @@ header h1 {
 body {
     background-image: url("../Bio/images/Rainbosplosion.jpg");
     background-size: cover;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
     width: 100%;
     }
 .info-cards {
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
+    /* flex-wrap: wrap; */
+    margin: 50px;
     padding: 20px;
-    flex: 1;
-    display: flex;
+    /* display: flex; */
     min-height: 100vh;
+    align-items: center;
+    font-size: 3vh;
 }
-.bio, .help, .contact, .portfolio {
+/* .bio, .help, .contact, .portfolio {
     color: var(--text);
     background-color: var(--background);
     text-align: center;
@@ -82,12 +83,37 @@ body {
     padding: 10px;
     position: relative;
     display:inline-block; *display:inline; zoom:1
-}
+} */
 .card {
     height: 250px;
     width: 25%;
-    border: 1px solid red;
+    border-radius: 10px;
+    background-color: var(--background);
+    color: var(--text);
+    text-align: center;
+    text-shadow: 0 0 8px var(--shadow);
 }
+.card p {
+    padding: 5px;
+    color: var(--shadow);
+    font-size: 2.5vh;
+    text-shadow: none;
+}
+.info-cards a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 2vh;
+    list-style: none;
+}
+.info-cards a:link, a:visited {
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--text);
+}
+.info-cards a:hover, a:active {
+    color: var(--shadow);
+  }
+
 /* Portfolio page */
 
 
