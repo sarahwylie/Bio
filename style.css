@@ -48,42 +48,16 @@ header h1 {
 body {
     background-image: url("../Bio/images/Rainbosplosion.jpg");
     background-size: cover;
-    /* justify-content: space-between;
-    flex-wrap: wrap; */
     width: 100%;
     }
 .info-cards {
     justify-content: center;
-    /* flex-wrap: wrap; */
     margin: 50px;
     padding: 20px;
-    /* display: flex; */
     min-height: 100vh;
     align-items: center;
     font-size: 3vh;
 }
-/* .bio, .help, .contact, .portfolio {
-    color: var(--text);
-    background-color: var(--background);
-    text-align: center;
-    margin: 20px 10px 20px 10px;
-    border-radius: 10px;
-    padding: 10px;
-    position: relative;
-}
-.bio p, .help, .contact, .portfolio {
-    height: 250px;
-    width: 500px;
-    color: var(--text);
-    background-color: var(--background);
-    flex: wrap;
-    text-align: center;
-    margin: 20px 10px 20px 10px;
-    border-radius: 10px;
-    padding: 10px;
-    position: relative;
-    display:inline-block; *display:inline; zoom:1
-} */
 .card {
     height: 250px;
     width: 25%;
@@ -101,9 +75,9 @@ body {
 }
 .info-cards a {
     text-decoration: none;
-    color: var(--text);
     font-size: 2vh;
-    list-style: none;
+    color: var(--text);
+    text-shadow: 0 0 8px var(--shadow);
 }
 .info-cards a:link, a:visited {
     text-decoration: none;
@@ -113,9 +87,16 @@ body {
 .info-cards a:hover, a:active {
     color: var(--shadow);
   }
+.link {
+    font-size: 2vh;
+}
 
-/* Portfolio page */
-
+/* Portfolio page - create separate style sheet when my work overfloweth */
+.info-cards img {
+    width: 200px;
+    height: 200px;
+    padding: 50px 0 50px 0;
+}
 
 /* stylish foot */
 footer {
