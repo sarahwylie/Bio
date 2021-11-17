@@ -79,6 +79,10 @@ body {
     color: var(--text);
     text-shadow: 0 0 8px var(--shadow);
 }
+#portfolio-card {
+    display: grid;
+    align-items: center;
+}
 .info-cards a:link, a:visited {
     text-decoration: none;
     display: inline-flex;
