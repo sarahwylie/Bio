@@ -37,6 +37,11 @@ body {
     padding: 1.5%;
 }
 
+.sw {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
 .Sarah {
     text-decoration: none;
     color: var(--text);
@@ -45,6 +50,8 @@ body {
     padding: 2%;
     text-align: end;
     float: right;
+    margin-top: 0%;
+    padding-top: 0%;
 }
 
 .Sarah a:link, a:visited {
