@@ -1,43 +1,120 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css" />
-    <title>Sarah Wylie</title>
+    <link rel="icon" type="image/jpg" sizes="48x48" href="./images/Sarahpic.jpg">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <!-- Let's get this thing started! -->
-    <header>
-        <h1>
-            <a href="./index.html">Sarah Wylie</a>
-        </h1>
+    <hero class="hero columns">
+        <div class="column is-full">
+            <h1 class="title">Sarah Wylie</h1>
+            </div>
         <!-- reference headers -->
-        <section>
+        <div class="column is-full">
             <ul class="Sarah">
                 <li>
-                    <a href="./index.html#Bio">Bio</a>
+                    <a href="#Bio">Bio</a>
                 </li>
                 <li>
-                    <a href="./index.html#Help">What I Can Do For You</a>
+                    <a href="#Help">What I Can Do For You</a>
                 </li>
                 <li>
-                    <a href="./index.html#Portfolio">Portfolio</a>
+                    <a href="#Portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="./index.html#Contact">Contact</a>
+                    <a href="#Contact">Contact</a>
                 </li>
             </ul>
+        </div>
+    </hero>
+    <!-- Info cards -->
+    <section class="info-cards columns">
+        <div class="card column is-one-third">
+            <a class="linking" href="https://sarahwylie.github.io/Weather-Dashboard/">
+              <img class="img-fluid rounded-start pic" src="./images/Weather.jpg">
+                  <div class="card-body">
+                      <h2 class="card-title">Weather Dashboard</h2>
+                  </div>
+                  </a>
+              </div>
+    
+              <div class="card column is-one-third">
+                <a class="linking" href="https://sarahwylie.github.io/BeersandBands/">
+                  <img class="img-fluid rounded-start pic" src="./images/BeersandBands.jpg">
+                      <div class="card-body">
+                          <h2 class="card-title">Beers and Bands</h2>
+                      </div>
+                      </a>
+                  </div>
         </section>
-    </header>
-    <div class="info-cards">
-        <a class="card" href="https://sarahwylie.github.io/run-buddy/">Run Buddy
-        </br>
-        <img src="./images/Run-buddy.png"></a>
-    </div>
-    <footer>
-        Made with ❤️ by <a href="index.html#Contact"> Sarah Wylie</a>
-    </footer>
+        <section class="info-cards columns">
+            <div class="card column is-one-third">
+                <a class="linking" href="https://sarahwylie.github.io/Password-Generator/">
+                  <img class="img-fluid rounded-start pic" src="./images/Password.jpg">
+                      <div class="card-body">
+                          <h2 class="card-title">Password Generator</h2>
+                      </div>
+                      </a>
+                  </div>
+        
+                  <div class="card column is-one-third">
+                    <a class="linking" href="https://sarahwylie.github.io/git-it-done/">
+                      <img class="img-fluid rounded-start pic" src="./images/Git.jpg">
+                          <div class="card-body">
+                              <h2 class="card-title">Git it Done</h2>
+                          </div>
+                          </a>
+                      </div>
+            </section>
+        <section class="info-cards columns">
+            <div class="card column is-one-third">
+                <a class="linking" href="https://sarahwylie.github.io/taskmaster-pro/">
+                  <img class="img-fluid rounded-start" src="./images/Taskmaster.jpg">
+                      <div class="card-body">
+                          <h2 class="card-title">Taskmaster Pro</h2>
+                      </div>
+                      </a>
+                  </div>
+        
+                  <div class="card column is-one-third">
+                    <a class="linking" href="https://sarahwylie.github.io/Scheduler/">
+                      <img class="img-fluid rounded-start" src="./images/Scheduler.jpg">
+                          <div class="card-body">
+                              <h2 class="card-title">Work Day Scheduler</h2>
+                          </div>
+                          </a>
+                      </div>
+            </section>
+            <section class="info-cards columns">
+                <div class="card column is-one-third">
+                  <a class="linking" href="https://sarahwylie.github.io/run-buddy/">
+                    <img class="img-fluid rounded-start pic" src="./images/Run-buddy.png">
+                        <div class="card-body">
+                            <h2 class="card-title">Run Buddy</h2>
+                        </div>
+                        </a>
+                    </div>
+        
+                        <div class="card column is-one-third">
+                          <a class="linking" href="https://sarahwylie.github.io/Horiseon/">
+                            <img class="img-fluid rounded-start pic" src="./images/Horiseon.jpg">
+                                <div class="card-body">
+                                    <h2 class="card-title">Horiseon</h2>
+                                </div>
+                                </a>
+                            </div>
+        </section>
+</body>
+<!-- footer -->
+<footer class="is-fullhd">
+    Made with ❤️ by <a href="#Contact"> Sarah Wylie</a>
+</footer>
 
 </html>

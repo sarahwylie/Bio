@@ -1,78 +1,90 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Sarah Wylie</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/jpg" sizes="48x48" href="./images/Sarahpic.jpg">
+    <title>Sarah Wylie</title>
 </head>
 
 <body>
-  <!-- Let's get this thing started! -->
-  <header>
-    <h1>
-      <a href="/">Sarah Wylie</a>
-    </h1>
-    <!-- reference headers -->
-    <section>
-      <ul class="Sarah">
-        <li>
-          <a href="#Bio">Bio</a>
-        </li>
-        <li>
-          <a href="#Help">What I Can Do For You</a>
-        </li>
-        <li>
-          <a href="#Portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#Contact">Contact</a>
-        </li>
-      </ul>
+    <hero class="hero columns">
+        <div class="column is-full">
+            <h1 class="title">Sarah Wylie</h1>
+            </div>
+        <!-- reference headers -->
+        <div class="column is-full">
+            <ul class="Sarah">
+                <li>
+                    <a href="#Bio">Bio</a>
+                </li>
+                <li>
+                    <a href="#Help">What I Can Do For You</a>
+                </li>
+                <li>
+                    <a href="#Portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </hero>
+    <!-- Info cards -->
+    <section class="info-cards columns">
+        <div class="card column is-one-third">
+            <!-- col-5 mb-4 -->
+            <img class="img-fluid rounded-start" src="./images/Sarahpic.jpg">
+                <div class="card-body">
+                    <h2 id="Bio" class="card-title">Bio</h2>
+                    <p class="card-text">Sarah is married with three adopted kids, three adopted dogs, and two adopted
+                        cats. Born in Wisconsin, Sarah
+                        has
+                        lived in many places, but is happy to call Austin home.</p>
+                </div>
+            </div>
+
+        <div class="card column is-one-third for-you">
+            <div class="card-body">
+                <h2 id="Help" class="card-title">What I Can Do For You</h2>
+                <p class="card-text">Sarah is credentialed from the University of Austin in Full Stack Web Development. With knowledge in
+                    HTML, CSS,
+                    JS, etc, Sarah can help maintain and enhance an established site or help you build your dream
+                    project from
+                    scratch. Not a believer? Check out <a class="linking" href="./Portfolio.html">her portfolio</a>, then
+                    <a class="linking" href="#Contact">reach
+                        out</a> to
+                    schedule
+                    a consult.</p>
+            </div>
+        </div>
+</section>
+
+<section class="info-cards columns">
+        <div id="portfolio-card" class="card column is-one-third portfolio-card">
+            <div class="card-title">
+                <h2 id="Portfolio" class="portfolio"><a href="./Portfolio.html">Portfolio</a></h2>
+            </div>
+        </div>
+
+        <div class="card column is-one-third">
+                <h2 id="Contact" class="card-title">Contact Info</h2>
+                <ul class="contact-info card-text">
+                    <li class="card-text">Email: <a class="linking" href="#">sarahannemariawylie@gmail.com</a></li>
+                    <li class="card-text">Github: <a class="linking" href="https://github.com/sarahwylie">sarahwylie</a></li>
+                    <li class="card-text">LinkedIn: <a class="linking" href="https://www.linkedin.com/in/sarahamwylie/">sarahwylie</a>
+                    </li>
+                </ul>
+        </div>
     </section>
-  </header>
-  <!-- Info cards -->
-  <div class="info-cards">
-    <div class="card">
-      <h2 id="Bio">Bio</h2>
-      <p>Sarah is married with three adopted kids, three adopted dogs, and two adopted cats. Born in Wisconsin, Sarah
-        has
-        lived in many places, but is happy to call Austin home.</p>
-    </div>
-    </br>
-    </br>
-    <div class="card">
-      <h2 id="Help">What I Can Do For You</h2>
-      <p>Sarah is credentialed from the University of Austin in Full Stack Web Development. With knowledge in HTML, CSS,
-        JS, etc, Sarah can help maintain and enhance an established site or help you build your dream project from
-        scratch. Not a believer? Check out <a class="link" href="./Portfolio.html">her portfolio</a>, then <a
-          class="link" href="#Contact">reach
-          out</a> to
-        schedule
-        a consult.</p>
-    </div>
-    </br>
-    </br>
-    <div id="portfolio-card" class="card">
-      <h2 id="Portfolio"><a href="./Portfolio.html">Portfolio</a></h2>
-    </div>
-    </br> </br>
-    <div class="card">
-      <h2 id="Contact">Contact Info</h2>
-      </br>
-      <ul class="contact-info">
-        <li><strong>Email: </strong><a href="#">sarahannemariawylie@gmail.com</a></li>
-        </br>
-        <li><strong>Github: </strong><a href="https://github.com/sarahwylie">sarahwylie</a></li>
-        </br>
-        <li><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/sarahamwylie/">sarahwylie</a></li>
-      </ul>
-    </div>
-  </div>
 </body>
 <!-- footer -->
-<footer>
-  Made with ❤️ by <a href="#Contact"> Sarah Wylie</a>
+<footer class="is-fullhd">
+    Made with ❤️ by <a href="#Contact"> Sarah Wylie</a>
 </footer>
 
 </html>
