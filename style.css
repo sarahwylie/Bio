@@ -28,6 +28,10 @@ body {
     /* display: inline-block; */
 }
 
+#about {
+    color: white;
+}
+
 .title {
     font-size: 8em;
     text-decoration: none;
